@@ -2,6 +2,8 @@ import React from 'react'
 import './styles/footer.scss'
 import Logo from './asserts/micro_logo_black.png'
 import Insta from './asserts/insta.png'
+import Youtube from './asserts/youtube.png'
+import Linkedin from './asserts/linkedin.png'
 
 const Footer = () => {
   return (
@@ -32,9 +34,9 @@ const Footer = () => {
           <div className="footer_contact_details">
               <h4>Follow Us</h4>
               <div className="footer_contact_contact">  
-                <h6><img src = {Insta} className = "footer_icon_logo" />microbus.nitkkr/</h6>
-                <h6>microbus.nitkkr/</h6>
-                <h6>microbus.nitkkr/</h6>
+                <h6><img src = {Insta } className = "footer_icon_insta" />microbus.nitkkr/</h6>
+                <h6><img src = {Youtube } className = "footer_icon_insta" />microbus.nitkkr/</h6>
+                <h6><img src = {Linkedin } className = "footer_icon_insta" />microbus.nitkkr/</h6>
               </div>
             </div>
           </div>
