@@ -22,8 +22,19 @@
             display:flex;
             justify-content:center;
             align-items:center;
-            h4{
-                font-size:2.2vh;
+            .footer_contact_details_logo{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                margin:1.5vh;
+            }
+            .footer_icon_logo{
+                height:auto;
+                width:8vh;
+                font-weight:100;
+            }
+            h2{
+                font-size:3vh;
                 margin:2vh;
                 font-weight:100;
             }
@@ -41,16 +52,8 @@
             display:flex;
             justify-content:center;
             align-items:center;
-            .footer_icon_logo{
-                height:auto;
-                width:8vh;
-                font-weight:100;
-            }
-            .footer_contact_details_logo{
-                display:flex;
-                justify-content:center;
-                align-items:center;
-            }
+            
+            
             .footer_contact_detail{
                 display:flex;
                 justify-content:center;
