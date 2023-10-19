@@ -1,10 +1,11 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 .footer_container{
     width: 100vw;
-    position:absolute;
+    // position:absolute;
     bottom:0px;
     height:30vh;
     display: flex;
