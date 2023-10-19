@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+// .home_container {
+//   height: 100vh;
+//   width: 100vw;
+// }
+
+// .container_details {
+//   display: flex;
+//   .wave {
+//     height: 1vh;
+//     width: 50vh;
+//   }
+//   .globe {
+//     width: auto;
+//     height: 10vh;
+//   }
+// }
+
+.home {
+  height: 200vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .home_mid {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+
+    h3 {
+      font-family: Akshar;
+      font-size: 5.0625rem;
+      background: var(
+        --s-gradient-2,
+        linear-gradient(260deg, #0047ff -13.37%, #00bcd4 109.53%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-family: Roboto;
+      line-height: 2.8625rem;
+      font-size: 1.9375rem;
+      text-align: justify;
+    }
+
+    img {
+      height: 29.75rem;
+      width: 32.25rem;
+    }
+  }
+}
