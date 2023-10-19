@@ -2,15 +2,20 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./styles/navbar.css"
+import Slider from "./components/slider";
+// import "./App.css";
 
 function App() {
   return (
     <Router>
         <Navbar/>
+
         <Routes>
            <Route />
         </Routes>
+
+        <Slider/>
+
         <Footer/>
     </Router>
   );

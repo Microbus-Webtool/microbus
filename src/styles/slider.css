@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+}
+
+.main1 {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-slide1 img {
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+}
+.main2 {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0;
+    position: relative;
+}
+
+.main-slide2 img {
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.main-slide1 {
+    display: inline-block;
+    animation: 35s slide-left infinite linear;
+}
+
+.main-slide2 {
+    display: inline-block;
+    animation: 35s slide-right infinite linear;
+}
