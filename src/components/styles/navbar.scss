@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.navbar{
+
+    
+   background-color: black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   color: white;
+    
+}
+
+.logo{
+    margin: 1rem;
+}
+
+.menu{
+    display: flex;
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    li{
+        margin-right: 20px;
+        font-family: Open Sans;
+        font-size: 1.5rem;
+       
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+// .navbar {
+//     background-color: #333; // Set your desired background color
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 20px; // Adjust padding as needed
+//     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); // Optional shadow
+  
+//     .logo {
+//       // Styles for your logo
+//       img {
+//         max-width: 100px; // Adjust the logo's size as needed
+//         height: auto;
+//       }
+//     }
+  
+//     .menu {
+//       display: flex;
+  
+//       .menu-item {
+//         list-style: none;
+//         margin-right: 20px; // Adjust margin as needed
+//         font-size: 16px; // Set your desired font size
+  
+//         a {
+//           text-decoration: none;
+//           color: #fff; // Set the text color for menu items
+  
+//           &:hover {
+//             color: #ff9900; // Change the color on hover
+//           }
+//         }
+//       }
+//     }
+//   }
