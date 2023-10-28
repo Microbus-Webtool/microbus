@@ -1,9 +1,9 @@
 import React from 'react'
-import './styles/footer.scss'
-import Logo from '../asserts/micro_logo_black.png'
-import Insta from '../asserts/insta.png'
-import Youtube from '../asserts/youtube.png'
-import Linkedin from '../asserts/linkedin.png'
+import '../styles/footer.scss'
+import Logo from '../assets/micro_logo_black.png'
+import Insta from '../assets/insta.png'
+import Youtube from '../assets/youtube.png'
+import Linkedin from '../assets/linkedin.png'
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="footer_contact">
             <div className="footer_contact_details">
               <div className="footer_contact_details_logo">
-                  <img src = {Logo} className = "footer_icon_logo" />  
+                  <img src = {Logo} className = "footer_icon_logo" alt='logo' />  
                 </div>
                 <div className="footer_contact_contact">  
                   <h2>Managed by MICROBUS</h2>
@@ -34,9 +34,9 @@ const Footer = () => {
           <div className="footer_contact_details">
               <h4>Follow Us</h4>
               <div className="footer_contact_contact">  
-                <h6><img src = {Insta } className = "footer_icon_insta" />microbus.nitkkr/</h6>
-                <h6><img src = {Youtube } className = "footer_icon_insta" />microbus.nitkkr/</h6>
-                <h6><img src = {Linkedin } className = "footer_icon_insta" />microbus.nitkkr/</h6>
+                <h6><img src = {Insta } className = "footer_icon_insta" alt='insta'/>microbus.nitkkr/</h6>
+                <h6><img src = {Youtube } className = "footer_icon_insta" alt='youtube'/>microbus.nitkkr/</h6>
+                <h6><img src = {Linkedin } className = "footer_icon_insta" alt='LinkedIn' />microbus.nitkkr/</h6>
               </div>
             </div>
           </div>

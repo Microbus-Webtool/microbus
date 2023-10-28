@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Logo from '../asserts/micro_logo_black.png'
-import "./styles/navbar.scss"
+import React from 'react'
+import Logo from '../assets/micro_logo_black.png'
+import "../styles/navbar.scss"
 
 
 const Navbar = () => {
