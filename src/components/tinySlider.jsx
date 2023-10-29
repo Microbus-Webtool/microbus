@@ -1,28 +1,31 @@
-import React, { useEffect }from 'react';
-import 'tiny-slider/dist/tiny-slider.css';
+import React, { useEffect } from "react";
+import "tiny-slider/dist/tiny-slider.css";
 import { tns } from "tiny-slider/src/tiny-slider";
+import "../styles/tinySlider.scss";
+import ActionAreaCard from "./sliderCard";
 
 const CarouselComponent = () => {
   useEffect(() => {
     const slider = tns({
-      container: '.my-slider',
-      mode: 'carousel',
-      axis: 'horizontal',
-      items: 4,
+      mode: "carousel",
+      axis: "horizontal",
       edgePadding: 50,
-      gutter: 150,
-      controls: true,
-      nav: true,
-      mouseDrag: true, 
+      gutter: 15,
+      nav: false,
       touch: true,
-      speed: 2500,
       loop: true,
       autoplay: true,
-      // autoplayButton: false,
+      autoplayButtonOutput:false,
       autoplayTimeout: 2000,
-      animateIn: 'fadeIn',
+      animateIn: "fadeIn",
       controls: false,
       rewind: false,
+
+      container: ".my-slider",
+      items: 3,
+      mouseDrag: true,
+      swipeAngle: false,
+      speed: 400,
       responsive: {
         768: {
           items: 5,
@@ -30,39 +33,31 @@ const CarouselComponent = () => {
       },
     });
     
-
     return () => {
       slider.destroy();
     };
   }, []);
-
+  
   return (
     <div>
-      <h1>OUR SOCIETY</h1>
       <div className="my-slider">
         <div>
-          <img src="./assets/image2.png" alt="image1.jpg" />
+          <ActionAreaCard />
         </div>
         <div>
-          <img src="./assets/image2.png" alt="image2.jpg" />
+          <ActionAreaCard />
         </div>
         <div>
-          <img src="./assets/image2.png" alt="image3.jpg" />
+          <ActionAreaCard />
         </div>
         <div>
-          <img src="./assets/image2.png" alt="image1.jpg" />
+          <ActionAreaCard />
         </div>
         <div>
-          <img src="./assets/image2.png" alt="image2.jpg" />
+          <ActionAreaCard />
         </div>
         <div>
-          <img src="./assets/image2.png" alt="image3.jpg" />
-        </div>
-        <div>
-          <img src="./assets/image2.png" alt="image2.jpg" />
-        </div>
-        <div>
-          <img src="./assets/image2.png" alt="image3.jpg" />
+          <ActionAreaCard />
         </div>
       </div>
     </div>

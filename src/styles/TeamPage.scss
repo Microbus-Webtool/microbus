@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Orbitron:wght@400;500&family=Press+Start+2P&display=swap");
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 4.7rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 10.375rem;
+  /* 172.917% */
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  background: linear-gradient(265deg, #00ffbd -5.84%, #025b8c 111.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+//   text-align: right;
+  font-family: Akshar;
+  font-size: 3.0625rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 8.25rem; /* 162.963% */
+
+}
+
+// img{
+//     height:500px
+// }
