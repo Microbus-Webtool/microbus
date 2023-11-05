@@ -4,7 +4,7 @@ import "../styles/slider.scss";
 const Slider = ({ images }) => {
   return (
     <div>
-        {/* <div className="main1">
+        <div className="main1">
             <div className = "main-slide1">
                 {images.map((image, index) => (
                 <img key={index} src={image} alt={`image${index + 1}.jpg`} />
@@ -30,7 +30,7 @@ const Slider = ({ images }) => {
                 <img key={index} src={image} alt={`image${index + 1}.jpg`} />
             ))}
             </div>
-        </div> */}
+        </div>
     </div>
   );
 }

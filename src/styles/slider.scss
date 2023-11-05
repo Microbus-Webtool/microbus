@@ -55,15 +55,14 @@ body {
         transform: translateX(0);
     }
 }
-
 .main-slide1 {
     display: inline-block;
-    animation: 35s slide-left infinite linear;
+    animation: 50s slide-left infinite linear;
 }
 
 .main-slide2 {
     display: inline-block;
-    animation: 35s slide-right infinite linear;
+    animation: 50s slide-right infinite linear;
 }
 
 .slider-heading {

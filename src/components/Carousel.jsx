@@ -4,8 +4,8 @@ import ActionAreaCard from "./sliderCard";
 
 const Carousel = ({ images }) => {
   return (
-    <div className="main1">
-      <div className="main-slide1">
+    <div className="main">
+      <div className="main-slide">
         {images.map((image, index) => (
           <ActionAreaCard
             key={index}
