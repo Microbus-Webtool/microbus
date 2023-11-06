@@ -1,0 +1,91 @@
+/* Style the slider container */
+.my-slider {
+  position: relative;
+  width: 90%;
+  // padding: 2px;
+  overflow: hidden;
+}
+
+/* Style individual slides */
+.my-slider .tns-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the controls (prev/next buttons) */
+.tns-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Style the navigation dots (nav) */
+.tns-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the navigation dots (nav) as thumbnails */
+.tns-nav-as-thumbnails .tns-nav-active {
+  border: 2px solid #007bff; /* Style the active thumbnail */
+  opacity: 1; /* Make the active thumbnail fully visible */
+}
+
+/* Style the autoplay start/stop button (if used) */
+.tns-autoplay-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Customize animation classes */
+.tns-fadeIn,
+.tns-fadeOut,
+.tns-normal {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.tns-fadeIn.tns-waiting,
+.tns-fadeOut.tns-waiting,
+.tns-normal.tns-waiting {
+  transition: none;
+}
+
+.tns-fadeIn.tns-waiting {
+  opacity: 1;
+}
+
+/* Customize the arrows (prev/next) if used */
+.tns-controls button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Customize the active arrow (prev/next) */
+.tns-controls button.tns-active {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .my-slider {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+}
+
+.slidercard {
+  border-radius: 2.1875rem;
+  border: 2px solid #00ffbd;
+  background: rgba(255, 255, 255, 0.11);
+  box-shadow: 18px 28px 20px 1px rgba(0, 0, 0, 0.25);
+}
