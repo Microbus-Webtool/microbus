@@ -4,7 +4,6 @@ import "../styles/navbar.scss"
 
 const Navbar = () => {
 
- 
   return (
     <nav className="navbar">
       <div className="logo">
