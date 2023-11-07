@@ -1,0 +1,89 @@
+
+.event-container{
+    min-height:100vh;
+    width:100vw;
+      .heading{
+        color: #FFF;
+        text-align: center;
+        font-family: Orbitron;
+        font-size: 15vh;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 10vh;
+        // letter-spacing: 0.5px;
+        text-transform: uppercase;
+        }
+
+       .card-container{
+            width:95vw;
+            margin:5vh;
+            // display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 10vh;
+            
+
+            .rectangle{
+                width: 95vw;
+                // margin:vh;
+                height: auto;
+                background: linear-gradient(180deg, rgba(148, 12, 187, 0.24) 0%, rgba(85, 7, 108, 0.24) 37.6%, rgba(210, 69, 226, 0.24) 73.02%, rgba(143, 44, 245, 0.24) 100%);
+                border-radius: 2vh;
+                
+                .card-title{
+                    font-family: Akshar;
+                    font-size: 10vh;
+                    font-style: normal;
+                    font-weight: 600;
+                    padding-left: 1vh;
+                    padding-right: 3vh;
+
+                    background: linear-gradient(265deg, #00FFBD -5.84%, #025B8C 111.58%);   
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .card-title-details{
+                    display: flex;
+                    .box-1{
+                        padding-left: 2vh;
+                        padding-right: 2vh;
+                    }
+                }
+
+                .card-content{
+                    // width: 45 vw;
+                    margin:2vh;
+                    padding-right: 2vh;
+                    color: #C4C4C4;
+                    font-family: Roboto;
+                    font-size: 31px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 45.8px; /* 147.742% */
+                }
+
+                .card-image{
+                    width: 50vw;
+                    display:flex;
+                    // justify-content: center;
+                    align-items: center;
+                    height: auto;
+                    border-radius: 31px;
+                    margin:5vh 4vh 5vh 3vh;
+                }
+                .box-22{
+                    display:block;
+                    text-align: right;
+                }
+                .box-2{
+                    display:flex;
+                }
+                .event-image{
+                    width:80vh;
+                    height:auto;                }
+                // -webkit-text-fill-color: transparent;
+            }
+       } 
+    }
