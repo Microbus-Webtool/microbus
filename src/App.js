@@ -3,9 +3,9 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import Event from "./components/Events";
+import Event from "./components/Event";
 import Workshop from "./components/Workshop";
-import "./styles/navbar.css"
+import "./styles/navbar.scss"
 import Slider from "./components/slider";
 import TeamPage from "./components/TeamPage";
 

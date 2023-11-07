@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles/navbar.scss"
 
 
+
 const Navbar = () => {
 
  
@@ -14,16 +15,19 @@ const Navbar = () => {
       <div className="menu">
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="/about">About</a>
           </li>
           <li>
-            <a href="#">Events</a>
+            <a href="/events">Events</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a href="/workshops">Workshop</a>
+          </li>
+          <li>
+            <a href="/teams">Team</a>
           </li>
         </ul>
       </div>
