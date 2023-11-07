@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Orbitron&family=Roboto&display=swap');
+
+.workshop-container {
+  /* height: 100vh; */
+  /* width: 100vw; */
+
+  .heading {
+    color: #FFF;
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 15vh;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 10vh;
+    /* letter-spacing: 0.5px; */
+    text-transform: uppercase;
+  }
+
+  .card-container {
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 669px;
+    margin: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8vh;
+    background: linear-gradient(180deg, rgba(148, 12, 187, 0.24) 0%, rgba(85, 7, 108, 0.24) 37.6%, rgba(210, 69, 226, 0.24) 73.02%, rgba(143, 44, 245, 0.24) 100%);
+
+    .card-heading {
+      text-align: center;
+      font-family: Akshar;
+      font-size: 81px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 132px;
+      background: linear-gradient(265deg, #00FFBD -5.84%, #025B8C 111.58%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card-content {
+      flex: 1; /* Fill the remaining space */
+      display: flex;
+      justify-content: center;
+      border-radius: 8vh;
+    }
+
+    .Upper-rectangle {
+      position: relative;
+      width: 90%;
+      height: 90%;
+      text-align: center;
+      background-image: url("../../public/assets/workshopimg.jpeg");
+      background-size: contain; /* Fit the entire image inside the container */
+      border-radius: 5vh;
+      overflow: hidden;
+
+      .Lower-rectangle {
+        position: absolute;
+        font-family: Roboto;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 2vh;
+        font-size: large;
+        opacity: 0;
+        transition: opacity 0.5s; 
+      }
+
+      &:hover .Lower-rectangle {
+        opacity: 1;
+      }
+    }
+  }
+}
