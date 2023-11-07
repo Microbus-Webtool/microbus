@@ -3,7 +3,7 @@ import "../styles/slider.scss";
 
 const Slider = ({ images }) => {
   return (
-    <div>
+    <div className="Wrapper">
         <div className="main1">
             <div className = "main-slide1">
                 {images.map((image, index) => (
@@ -17,7 +17,9 @@ const Slider = ({ images }) => {
             </div>
         </div>
 
-        <h1 className="slider-heading">MICROBUS</h1>
+        <div className="slider-heading">
+            MICROBUS
+        </div>
         
         <div className="main2">
             <div className = "main-slide2">
