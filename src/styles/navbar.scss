@@ -1,77 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-.navbar{    
-   background-color: black;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
-   color: white;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
-.logo{
-    margin: 1rem;
+.content{
+  padding-top: 13.5vh;
 }
 
-.menu{
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2lvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 13.5lvh;
+  background-color: black;
+  position: fixed; /* Make the navigation bar fixed */
+  width: 100%; /* Make it span the entire width of the viewport */
+  top: 0; /* Position it at the top of the viewport */
+  z-index: 10; /* Ensuring it's above other content */
+  box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+  height: 10vh;
+  width: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+    
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding-right: 2lvh;
+  }
+
+  .nav-elements {
+    position: absolute;
+    right: 0;
+    top: 13.5lvh;
+    background-color: black;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .nav-elements.active {
+    width: 100%;
+  }
+
+  .nav-elements ul {
     display: flex;
-    ul{
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-    }
+    flex-direction: column;
+  }
 
-    li{
-        margin-right: 20px;
-        font-family: Open Sans;
-        font-size: 1.5rem;
-       
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
-    }
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
 }
-
-
-
-
-
-
-
-
-// .navbar {
-//     background-color: #333; // Set your desired background color
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 10px 20px; // Adjust padding as needed
-//     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); // Optional shadow
-  
-//     .logo {
-//       // Styles for your logo
-//       img {
-//         max-width: 100px; // Adjust the logo's size as needed
-//         height: auto;
-//       }
-//     }
-  
-//     .menu {
-//       display: flex;
-  
-//       .menu-item {
-//         list-style: none;
-//         margin-right: 20px; // Adjust margin as needed
-//         font-size: 16px; // Set your desired font size
-  
-//         a {
-//           text-decoration: none;
-//           color: #fff; // Set the text color for menu items
-  
-//           &:hover {
-//             color: #ff9900; // Change the color on hover
-//           }
-//         }
-//       }
-//     }
-//   }
