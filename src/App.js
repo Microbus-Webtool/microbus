@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Event from "./components/Event";
 import Workshop from "./components/Workshop";
 import "./styles/navbar.scss"
-import Slider from "./components/slider";
+// import Slider from "./components/slider";
 import TeamPage from "./components/TeamPage";
 
 function App() {

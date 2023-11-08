@@ -7,7 +7,7 @@ import '../styles/footer.scss'
 
 const Footer = () => {
   return (
-    <>
+    <div className='footer'>
       <div className="footer_container">
         <div className="footer_material">
           <div className="footer_contact">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
