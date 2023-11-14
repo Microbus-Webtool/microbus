@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar&family=Orbitron&family=Roboto&display=swap');
 
 .workshop-container {
-  /* height: 100vh; */
-  /* width: 100vw; */
-
+  
+  margin-top: 6vh;
   .heading {
     color: #FFF;
     text-align: center;
@@ -19,7 +18,7 @@
   .card-container {
     /* display: flex; */
     /* justify-content: center; */
-    height: 669px;
+    height: 80vh;
     margin: 10vh;
     text-align: center;
     display: flex;
@@ -78,4 +77,35 @@
       }
     }
   }
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 8vh;
+    line-height: 4vh;
+    margin-top: 2vh;
+  }
+
+  .card-container {
+    margin: 6vh;
+    height: 50vh;
+    .card-heading {
+      font-size: 4vh;
+      line-height: 5vh;
+      padding-top: 2vh;
+    }
+    // width: auto;
+
+    .Upper-rectangle {
+      .Lower-rectangle {
+        padding: 1vh;
+        font-size: small;
+      }
+
+      &:hover .Lower-rectangle {
+        opacity: 1;
+      }     
+
+    }
+  }
+}
 }
