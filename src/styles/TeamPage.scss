@@ -1,43 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Orbitron:wght@400;500&family=Press+Start+2P&display=swap");
 
-body {
+body.team-body {
   opacity: 0.84;
   background: url("../../public/assets/background1.png"), lightgray 50%;
   background-color: black;
   background-size: cover;
   background-repeat: repeat-y;
+  margin: 0;
+  font-size: 16px;
 }
 
-h1 {
+.allCards {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+}
+
+.heading1 {
+  font-family: Akshar;
+  font-size: 3.0625rem;
+  font-style: normal;
+  font-weight: 600;
+  background: linear-gradient(265deg, #00ffbd -5.84%, #025b8c 111.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 175px;
+}
+
+.main-heading {
   color: #fff;
   text-align: center;
   font-family: Orbitron;
   font-size: 4.7rem;
   font-style: normal;
   font-weight: 800;
-  line-height: 10.375rem;
-  /* 172.917% */
   letter-spacing: 0.03125rem;
   text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
-h3 {
-  font-family: Akshar;
-  font-size: 3.0625rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 8.25rem;
-  background: linear-gradient(265deg, #00ffbd -5.84%, #025b8c 111.58%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.allCards {
-  position: relative;
-  text-align: center;
-}
-
-.heading1 {
-  margin-left: 160px;
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .main-heading {
+    // margin: 0;
+    // padding: 0;
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    
+  }
+  
+  .heading1 {
+    // margin: 0;
+    // padding: 0;
+    
+    margin-left: 8%;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
 }
