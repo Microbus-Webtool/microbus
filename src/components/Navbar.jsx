@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, NavLink } from "react";
 import "../styles/navbar.scss";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -65,7 +66,7 @@ const Navbar = () => {
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
+              <li><Link to ="#about" smooth> About </Link></li>
               <li><a href="/events">Events</a></li>
               <li><a href="/workshops">Workshop</a></li>
               <li><a href="/teams">Team</a></li>
