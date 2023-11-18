@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/TeamPage.scss";
 import Card from "./Card";
+import { useEffect } from "react";
 
 const teamMembers = [
   {
@@ -47,9 +48,21 @@ const teamMembers = [
 ];
 
 const TeamPage = () => {
+
+  useEffect(() => {
+    // Add a class to the body tag
+    document.body.classList.add("team-body");
+
+    // Remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove("team-body");
+    };
+  }, []);
+
   return (
     <div>
-      <h1>TEAMS</h1>
+
+      <h1 className="main-heading">TEAMS</h1>
       <div className="team-container">
         <h3 className="heading1">Developers</h3>
         <div className="allCards">
