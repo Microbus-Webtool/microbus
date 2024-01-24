@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Orbitron:wght@400;500&family=Press+Start+2P&display=swap");
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+  color: #fff;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 3.7rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 10.375rem;
+  /* 172.917% */
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+}
+
+.card-grp{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+

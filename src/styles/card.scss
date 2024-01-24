@@ -12,6 +12,20 @@ background: rgba(255, 255, 255, 0.11);
 box-shadow: 18px 28px 20px 1px rgba(0, 0, 0, 0.25);
 }
 
+.card_post {
+  display: inline-block;
+  width: 250px;
+  border: 1px solid grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin:15px 20px; /* Add right margin for spacing between cards */
+  border-radius: 1.1875rem;
+border: 2px solid white;
+background: rgba(255, 255, 255, 0.11);
+box-shadow: 18px 28px 20px 1px rgba(0, 0, 0, 0.25);
+}
+
 .card-image {
   width: 100%;
   height: 200px;
@@ -22,6 +36,15 @@ box-shadow: 18px 28px 20px 1px rgba(0, 0, 0, 0.25);
   padding: 16px;
   text-align: center;
   background-color: #00ffbb9e;
+  fill: #00907F;
+mix-blend-mode: exclusion;
+  
+}
+
+.card-details-post {
+  padding: 16px;
+  text-align: center;
+  background-color: white;
   fill: #00907F;
 mix-blend-mode: exclusion;
   
