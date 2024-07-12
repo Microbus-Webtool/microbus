@@ -70,3 +70,16 @@ body {
     text-transform: uppercase;
     z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+    .slider-heading {
+        width: 70%;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .slider-heading {
+        font-size: 0rem;
+    }
+}

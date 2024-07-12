@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import { useState, NavLink } from "react";
 import "../styles/navbar.scss";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -51,35 +51,44 @@ const Navbar = () => {
 
   return (
     <div>
-
       <nav className="navbar">
         <div className="container">
-
           <div className="logo">
+            <Link to="/">
               <img src="/assets/micro_logo_black.png" alt="Logo" />
+            </Link>
           </div>
 
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
           </div>
 
-          <div className={`nav-elements  ${showNavbar && "active"}`}>
+          <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><Link to ="#about" smooth> About </Link></li>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/workshops">Workshop</a></li>
-              <li><a href="/teams">Team</a></li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/#about" smooth>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/events">Events</Link>
+              </li>
+              <li>
+                <Link to="/workshops">Workshop</Link>
+              </li>
+              <li>
+                <Link to="/teams">Team</Link>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      <div class="content">
-        {/* <!-- Your main content goes here --> */}
-      </div>
+      <div class="content">{/* <!-- Your main content goes here --> */}</div>
     </div>
   );
-}
+};
 
 export default Navbar;

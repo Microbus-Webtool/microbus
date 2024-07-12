@@ -1,26 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Orbitron:wght@400;500&family=Press+Start+2P&display=swap");
 
-body.team-body {
+body {
   opacity: 0.84;
   background: url("../../public/assets/background1.png"), lightgray 50%;
   background-color: black;
   background-size: cover;
   background-repeat: repeat-y;
-  margin: 0;
-  font-size: 16px;
 }
 
-.allCards {
-  position: relative;
+h1 {
+  color: #fff;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  padding: auto;
+  font-family: Orbitron;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 800;
+  /* 172.917% */
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
 }
 
-.heading1 {
+.team-h1{
+  margin-top: 16px;
+}
+
+h3 {
   font-family: Akshar;
   font-size: 3.0625rem;
   font-style: normal;
@@ -29,38 +33,34 @@ body.team-body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 175px;
 }
 
-.main-heading {
-  color: #fff;
-  text-align: center;
-  font-family: Orbitron;
-  font-size: 4.7rem;
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.03125rem;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  margin-top: 20px;
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
-/* Media Query for Mobile Devices */
-@media (max-width: 767px) {
-  .main-heading {
-    // margin: 0;
-    // padding: 0;
-    font-size: 3.5rem;
-    margin-top: 3rem;
-    
-  }
-  
-  .heading1 {
-    // margin: 0;
-    // padding: 0;
-    
-    margin-left: 8%;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
+.team-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.allCards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.heading1 {
+  margin-left: 2%;
+  color: white;
 }

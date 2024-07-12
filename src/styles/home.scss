@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-.home {
-  height: 200vh;
+.homeImage {
+  background-color: black;
+  width: 100vw;
+  
+  img {
+    width: 100vw;
+  }
+}
+
+.home_about {
+  //height: 200vh;
   width: 100%;
+  padding-top: 1.5%;
   background-color: black;
   color: white;
   display: flex;
@@ -11,14 +21,13 @@
   justify-content: center;
   align-items: center;
 
-  .home_mid1 {
+  .home_mid {
     display: flex;
-    height: 100vh;
+    //height: 100vh;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 2rem;
-    padding-left: 5rem;
+    padding: 4rem;
 
     h3 {
       font-family: Akshar;
@@ -42,55 +51,25 @@
     img {
       height: 29.75rem;
       width: 32.25rem;
-    }
-
-    @media screen and (max-width: 1091px) {
-      height: 500vh;
-      img {
-          display: none;
-      }
-    }
-  }
-
-  .home_mid2 {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 2rem;
-    padding-right: 5rem;
-
-    h3 {
-      font-family: Akshar;
-      font-size: 5.0625rem;
-      background: var(
-        --s-gradient-2,
-        linear-gradient(260deg, #0047ff -13.37%, #00bcd4 109.53%)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      font-family: Roboto;
-      line-height: 2.8625rem;
-      font-size: 1.9375rem;
-      text-align: justify;
-    }
-
-    img {
-      height: 29.75rem;
-      width: 32.25rem;
-    }
-
-    @media screen and (max-width: 1091px) {
-      img {
-          display: none;
-      }
     }
   }
 }
 
 
+@media (max-width: 768px) {
+  .home_about {
+
+    .home_mid {
+      padding: 1rem;
+
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+      }
+    }
+  }
+}
