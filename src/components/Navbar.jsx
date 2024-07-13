@@ -68,11 +68,11 @@ const Navbar = () => {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/#about" smooth>
                   About
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/events">Events</Link>
               </li>
