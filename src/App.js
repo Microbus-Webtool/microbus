@@ -1,5 +1,5 @@
 
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route, redirect } from "react-router-dom"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -14,6 +14,8 @@ function App() {
     <Router>
         <Navbar/>
         <Routes>
+          {/* <Route render={() => <redirect  to={{pathname: "/"}} />} /> */}
+          <Route path="*" element={<Home/>} />
           <Route path='/' element={<Home/>} />
           <Route path='/teams' element={<TeamPage/>} />
           <Route path="/events" element={ <Event/> } />

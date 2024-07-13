@@ -1,5 +1,5 @@
-import React from "react";
-import { useState, NavLink } from "react";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "../styles/navbar.scss";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -9,6 +9,7 @@ const Navbar = () => {
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+  
 
   const Hamburger = () => (
     <svg
@@ -47,6 +48,7 @@ const Navbar = () => {
         />
       </g>
     </svg>
+
   );
 
   return (
@@ -66,27 +68,30 @@ const Navbar = () => {
           <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink exact to="/" activeClassName="active" onClick={handleShowNavbar}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <Link to="/#about" smooth>
-                  About
-                </Link>
+                <NavLink to="/events" activeClassName="active" onClick={handleShowNavbar}>
+                  Events
+                </NavLink>
               </li>
               <li>
-                <Link to="/events">Events</Link>
+                <NavLink to="/workshops" activeClassName="active" onClick={handleShowNavbar}>
+                  Workshop
+                </NavLink>
               </li>
               <li>
-                <Link to="/workshops">Workshop</Link>
-              </li>
-              <li>
-                <Link to="/teams">Team</Link>
+                <NavLink to="/teams" activeClassName="active" onClick={handleShowNavbar}>
+                  Team
+                </NavLink>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="content">{/* <!-- Your main content goes here --> */}</div>
+      <div className="content">{/* Your main content goes here */}</div>
     </div>
   );
 };
