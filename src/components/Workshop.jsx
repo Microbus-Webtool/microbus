@@ -38,6 +38,9 @@ const Workshop = () => {
                 <a href="https://unstop.com/o/IsheKC9?lb=wIvsgVX&utm_medium=Share&utm_source=shortUrl">
                   Register Now !!!
                 </a>
+                <a href="https://unstop.com/o/IsheKC9?lb=wIvsgVX&utm_medium=Share&utm_source=shortUrl">
+                  Brochure
+                </a>
               </div>
             </div>
           </div>

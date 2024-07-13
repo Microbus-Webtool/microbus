@@ -1,5 +1,5 @@
-import React from 'react'
-import '../styles/footer.scss'
+import React from "react";
+import "../styles/footer.scss";
 // import Logo from 'public/assets/micro_logo_black.png'
 // import Insta from "public/assets/insta.png";
 // import Youtube from "public/assets/youtube.png";
@@ -7,7 +7,7 @@ import '../styles/footer.scss'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className="footer">
       <div className="footer_container">
         <div className="footer_material">
           <div className="footer_contact">
@@ -29,8 +29,8 @@ const Footer = () => {
             <div className="footer_contact_details">
               <h4>Contact Us</h4>
               <div className="footer_contact_contact">
-                <h6>+91-96547687098</h6>
-                <h6>+91-98689059959</h6>
+                <h6>+91-96713 50248</h6>
+                <h6>+91-74193 05432</h6>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                     className="footer_icon_insta"
                     alt="insta"
                   />
-                  microbus.nitkkr/
+                  <a className="" href="">microbus.nitkkr/</a>
                 </h6>
                 <h6>
                   <img
@@ -52,7 +52,7 @@ const Footer = () => {
                     className="footer_icon_insta"
                     alt="youtube"
                   />
-                  microbus.nitkkr/
+                  <a className="" href="">microbus.nitkkr/</a>
                 </h6>
                 <h6>
                   <img
@@ -60,7 +60,7 @@ const Footer = () => {
                     className="footer_icon_insta"
                     alt="LinkedIn"
                   />
-                  microbus.nitkkr/
+                  <a className="" href="">microbus.nitkkr/</a>
                 </h6>
               </div>
             </div>
@@ -69,6 +69,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
