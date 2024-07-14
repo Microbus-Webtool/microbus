@@ -3,14 +3,6 @@ import "../styles/TeamPage.scss";
 import Card from "./Card";
 
 const developers = [
-  //  {
-  //    image: "/assets/team/sanchit1.png",
-  //    name: "Sanchit Beniwal",
-  //    designation: "Tech Lead",
-  //    linkedinURL: "",
-  //    instaURL: "",
-  //    githubURL: "",
-  //  },
   {
     image: "/assets/team/rahul.png",
     name: "Rahul Pant",
