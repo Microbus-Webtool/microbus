@@ -5,16 +5,16 @@ import React from "react";
 import "../styles/home.scss";
 // import test from "../assets/slider/image2.png";
 
-const images = [
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-  "/assets/slider/image2.png",
-];
+// const images = [
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+//   "/assets/slider/image2.png",
+// ];
 
 const Home = () => {
   return (
