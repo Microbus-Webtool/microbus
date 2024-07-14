@@ -5,7 +5,7 @@ const Workshop = () => {
   return (
     <div className="workshop">
       <div className="heading">
-        <h6> Workshop </h6>
+        <h1> Workshop </h1>
       </div>
       <div className="workshop-container">
         <div className="card-container">

@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 .homeImage {
   background-color: black;
-  width: 100vw;
   
   img {
     width: 100vw;

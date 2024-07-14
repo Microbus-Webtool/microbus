@@ -22,7 +22,7 @@ const Home = () => {
     
       <div className="homeImage">
         {/* <Slider images={images} /> */}
-        <img src="/./assets/landing bg1.png" alt="" />
+        <img src="/./assets/landing bg1.png" alt="Microbus" />
       </div>
 
       <div className="home_about" id="about">
