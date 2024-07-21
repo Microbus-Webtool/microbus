@@ -1,4 +1,5 @@
-import {BrowserRouter as Router, Routes, Route, BrowserRouter} from "react-router-dom"
+
+import {BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -17,6 +18,7 @@ function App() {
           <Route path='/teams' element={<TeamPage/>} />
           <Route path="/events" element={ <Event/> } />
           <Route path="/workshops" element={ <Workshop/> } />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
         <Footer/>
